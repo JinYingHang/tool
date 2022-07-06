@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>{
+    "data": [
+        {
+            "id": "bfcc9012-3e1e-440f-9e6c-e9d6b5cc5e9b",
+            "companyCode": "440000000",
+            "hazardCode": "440000000008",
+            "riskUnitName": "反应器",
+            "hazardDep": "分离加氢部",
+            "hazardLiablePerson": "李小强",
+            "deleted": "0",
+            "createDate": "2020-11-28 11:44:58",
+            "createBy": "某化工企业管理员",
+            "updateDate": "2020-11-28 11:44:58",
+            "updateBy": "王红"
+        }
+    ]
+}</value>
+  </data>
 </root>

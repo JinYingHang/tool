@@ -1,16 +1,16 @@
 ﻿namespace WorldToSql
 {
-    partial class FORM1
+    partial class Form1
     {
         /// <summary>
-        /// 必需的设计器变量。
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 清理所有正在使用的资源。
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,129 +20,145 @@
             base.Dispose(disposing);
         }
 
-        #region Windows 窗体设计器生成的代码
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 设计器支持所需的方法 - 不要修改
-        /// 使用代码编辑器修改此方法的内容。
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.值 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.richBox_Key = new System.Windows.Forms.RichTextBox();
+            this.richBox_IV = new System.Windows.Forms.RichTextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox1.Location = new System.Drawing.Point(6, 22);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(-29, 527);
+            this.button1.Location = new System.Drawing.Point(7, 414);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(601, 42);
-            this.button1.TabIndex = 2;
+            this.button1.Size = new System.Drawing.Size(447, 61);
+            this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "明文";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(58, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(396, 150);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
             // richTextBox2
             // 
-            this.richTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox2.Location = new System.Drawing.Point(149, 22);
+            this.richTextBox2.Location = new System.Drawing.Point(58, 168);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(137, 499);
+            this.richTextBox2.Size = new System.Drawing.Size(396, 150);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = "";
             // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox3.Location = new System.Drawing.Point(435, 22);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox3.TabIndex = 4;
-            this.richTextBox3.Text = "";
-            // 
-            // 值
-            // 
-            this.值.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.值.AutoSize = true;
-            this.值.Location = new System.Drawing.Point(56, 7);
-            this.值.Name = "值";
-            this.值.Size = new System.Drawing.Size(29, 12);
-            this.值.TabIndex = 5;
-            this.值.Text = "字段";
-            this.值.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 7);
+            this.label2.Location = new System.Drawing.Point(23, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "注释";
+            this.label2.TabIndex = 4;
+            this.label2.Text = "密文";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(484, 7);
+            this.label3.Location = new System.Drawing.Point(23, 334);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "属性代码";
+            this.label3.Size = new System.Drawing.Size(23, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "KEY";
             // 
-            // richTextBox4
+            // label4
             // 
-            this.richTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox4.Location = new System.Drawing.Point(292, 22);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox4.TabIndex = 8;
-            this.richTextBox4.Text = "";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 362);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 12);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "IV";
             // 
-            // label1
+            // richBox_Key
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "值域范围";
+            this.richBox_Key.Location = new System.Drawing.Point(58, 333);
+            this.richBox_Key.Name = "richBox_Key";
+            this.richBox_Key.Size = new System.Drawing.Size(396, 22);
+            this.richBox_Key.TabIndex = 7;
+            this.richBox_Key.Text = "84702E415A73CE27077B5F726E7BDBB0";
             // 
-            // FORM1
+            // richBox_IV
+            // 
+            this.richBox_IV.Location = new System.Drawing.Point(58, 361);
+            this.richBox_IV.Name = "richBox_IV";
+            this.richBox_IV.Size = new System.Drawing.Size(396, 24);
+            this.richBox_IV.TabIndex = 8;
+            this.richBox_IV.Text = "1C7AA98593AA69F4AAE119BD5C01D9ED";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(127, 392);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(77, 16);
+            this.radioButton1.TabIndex = 9;
+            this.radioButton1.Text = "不处理key";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Checked = true;
+            this.radioButton2.Location = new System.Drawing.Point(255, 392);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(65, 16);
+            this.radioButton2.TabIndex = 10;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "处理key";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 581);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox4);
+            this.ClientSize = new System.Drawing.Size(466, 487);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.richBox_IV);
+            this.Controls.Add(this.richBox_Key);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.值);
-            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "FORM1";
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -151,15 +167,16 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.Label 值;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox richBox_Key;
+        private System.Windows.Forms.RichTextBox richBox_IV;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
-

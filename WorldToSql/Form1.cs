@@ -10,51 +10,48 @@ using System.Windows.Forms;
 
 namespace WorldToSql
 {
-    public partial class FORM1 : Form
+    public partial class Form1 : Form
     {
-        public FORM1()
+
+        public Form1()
         {
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var a = richTextBox1.Lines;
-                var b = richTextBox2.Lines;
-                var d = richTextBox4.Lines;
-                if (a.Count() == 0 || b.Count() == 0)
-                    return;
 
-                var a1 = a.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
-                string[] c = new string[a1.Count()];
-                for (int i = 0; i < a1.Count(); i++)
+            var key = richBox_Key.Text;
+            var vi = richBox_IV.Text;
+            //不处理key
+            if (radioButton1.Checked)
+            {
+                if (!string.IsNullOrWhiteSpace(richTextBox1.Text))
                 {
-                    c[i] = $"///<summary>\r\n///{b[i]}--{d[i]}\r\n/// </summary>\r\n public string {a1[i]} "+"{get; set; }";
+                    var msg = AesGcm256Util.encrypt(richTextBox1.Text, key, vi);//加密
+                    richTextBox2.Text = msg;
                 }
-                richTextBox3.Lines=c;
-                richTextBox1.Lines = null;
-                richTextBox2.Lines = null;
-               
+                if (!string.IsNullOrWhiteSpace(richTextBox2.Text))
+                {
+                    var msg = AesGcm256Util.decrypt(richTextBox2.Text, key, vi);//解密
+                    richTextBox1.Text = msg;
+                }
             }
-            catch (Exception ex)
+            if (radioButton2.Checked)//处理key
             {
-                MessageBox.Show(ex.Message);
+                if (!string.IsNullOrWhiteSpace(richTextBox1.Text))
+                {
+                    var msg = AesGcm256Util.encrypt(richTextBox1.Text, AesGcm256Util.hexToByte(key), AesGcm256Util.hexToByte(vi));//加密
+                    richTextBox2.Text = msg;
+                }
+                if (!string.IsNullOrWhiteSpace(richTextBox2.Text))
+                {
+                    var msg = AesGcm256Util.decrypt(richTextBox2.Text, AesGcm256Util.hexToByte(key), AesGcm256Util.hexToByte(vi));//解密
+                    richTextBox1.Text = msg;
+                }
             }
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-            Dictionary<string, string> a = new Dictionary<string, string>();
-            a.Add("a", "1");
-            a.Add("a", "2");
-            a.Add("a", "3");
-            a.Add("a", "4");
-            a.Add("a", "5");
-            var b = a["a"];
         }
     }
 }
