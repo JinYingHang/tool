@@ -1,14 +1,4 @@
-﻿using md5_timespan;
-using md5_timeStamp;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace WorldToSql
@@ -22,13 +12,8 @@ namespace WorldToSql
 
         private void button1_Click(object sender, EventArgs e)
         {
-            rbox_key3.Text = (new Class1()).GetMD5Str(rbox_text.Text);
+            rbox_key3.Text = AESUtils.encrypt(rbox_text.Text,rbox_key1.Text);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var timeStamp = (new Class1()).GetTimeStamp();
-            (new Form2(timeStamp)).ShowDialog();
-        }
     }
 }
