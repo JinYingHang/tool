@@ -28,119 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rbox_key1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.值 = new System.Windows.Forms.Label();
+            this.rbox_text = new System.Windows.Forms.RichTextBox();
+            this.字段名 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rbox_key2 = new System.Windows.Forms.RichTextBox();
+            this.rbox_key3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rbox_key1
             // 
-            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox1.Location = new System.Drawing.Point(6, 22);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.rbox_key1.Location = new System.Drawing.Point(66, 190);
+            this.rbox_key1.Name = "rbox_key1";
+            this.rbox_key1.Size = new System.Drawing.Size(405, 21);
+            this.rbox_key1.TabIndex = 1;
+            this.rbox_key1.Text = "";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(-29, 527);
+            this.button1.Location = new System.Drawing.Point(12, 292);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(601, 42);
+            this.button1.Size = new System.Drawing.Size(459, 70);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "Md5加密";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox2
+            // rbox_text
             // 
-            this.richTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox2.Location = new System.Drawing.Point(149, 22);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "";
+            this.rbox_text.Location = new System.Drawing.Point(66, 13);
+            this.rbox_text.Name = "rbox_text";
+            this.rbox_text.Size = new System.Drawing.Size(405, 169);
+            this.rbox_text.TabIndex = 3;
+            this.rbox_text.Text = "测试数据-0a1+ssss";
             // 
-            // richTextBox3
+            // 字段名
             // 
-            this.richTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox3.Location = new System.Drawing.Point(435, 22);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox3.TabIndex = 4;
-            this.richTextBox3.Text = "";
-            // 
-            // 值
-            // 
-            this.值.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.值.AutoSize = true;
-            this.值.Location = new System.Drawing.Point(56, 7);
-            this.值.Name = "值";
-            this.值.Size = new System.Drawing.Size(29, 12);
-            this.值.TabIndex = 5;
-            this.值.Text = "字段";
-            this.值.Click += new System.EventHandler(this.label1_Click);
+            this.字段名.AutoSize = true;
+            this.字段名.Location = new System.Drawing.Point(31, 15);
+            this.字段名.Name = "字段名";
+            this.字段名.Size = new System.Drawing.Size(29, 12);
+            this.字段名.TabIndex = 5;
+            this.字段名.Text = "明文";
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 7);
+            this.label2.Location = new System.Drawing.Point(7, 196);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 6;
-            this.label2.Text = "注释";
+            this.label2.Text = "MD5密钥1";
             // 
-            // label3
+            // button2
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(484, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "属性代码";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox4.Location = new System.Drawing.Point(292, 22);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(137, 499);
-            this.richTextBox4.TabIndex = 8;
-            this.richTextBox4.Text = "";
+            this.button2.Location = new System.Drawing.Point(12, 368);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(459, 72);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "时间戳获取";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 7);
+            this.label1.Location = new System.Drawing.Point(7, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "值域范围";
+            this.label1.TabIndex = 10;
+            this.label1.Text = "MD5密钥3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 230);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "MD5密钥2";
+            // 
+            // rbox_key2
+            // 
+            this.rbox_key2.Location = new System.Drawing.Point(66, 227);
+            this.rbox_key2.Name = "rbox_key2";
+            this.rbox_key2.Size = new System.Drawing.Size(405, 21);
+            this.rbox_key2.TabIndex = 12;
+            this.rbox_key2.Text = "";
+            // 
+            // rbox_key3
+            // 
+            this.rbox_key3.Location = new System.Drawing.Point(66, 265);
+            this.rbox_key3.Name = "rbox_key3";
+            this.rbox_key3.Size = new System.Drawing.Size(405, 21);
+            this.rbox_key3.TabIndex = 13;
+            this.rbox_key3.Text = "";
             // 
             // FORM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 581);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox4);
+            this.ClientSize = new System.Drawing.Size(478, 443);
+            this.Controls.Add(this.rbox_key3);
+            this.Controls.Add(this.rbox_key2);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.值);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.字段名);
+            this.Controls.Add(this.rbox_text);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rbox_key1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FORM1";
             this.Text = "Form1";
@@ -151,15 +152,16 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rbox_key1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.Label 值;
+        private System.Windows.Forms.RichTextBox rbox_text;
+        private System.Windows.Forms.Label 字段名;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox rbox_key2;
+        private System.Windows.Forms.RichTextBox rbox_key3;
     }
 }
 
