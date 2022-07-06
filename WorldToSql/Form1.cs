@@ -19,6 +19,7 @@ namespace WorldToSql
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 var a = richTextBox1.Lines;
