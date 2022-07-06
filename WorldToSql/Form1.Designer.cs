@@ -43,6 +43,8 @@
             this.tBox_desc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tBox_tbName = new System.Windows.Forms.TextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -55,7 +57,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(347, 7);
+            this.button1.Location = new System.Drawing.Point(493, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -74,7 +76,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox3.Location = new System.Drawing.Point(288, 158);
+            this.richTextBox3.Location = new System.Drawing.Point(431, 158);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(137, 499);
             this.richTextBox3.TabIndex = 4;
@@ -102,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(328, 143);
+            this.label3.Location = new System.Drawing.Point(472, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 12);
             this.label3.TabIndex = 7;
@@ -113,7 +115,7 @@
             this.tBox_DBName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tBox_DBName.Location = new System.Drawing.Point(89, 8);
             this.tBox_DBName.Name = "tBox_DBName";
-            this.tBox_DBName.Size = new System.Drawing.Size(252, 21);
+            this.tBox_DBName.Size = new System.Drawing.Size(398, 21);
             this.tBox_DBName.TabIndex = 8;
             this.tBox_DBName.Text = "Inroad-YTWH";
             // 
@@ -140,7 +142,7 @@
             this.tBox_vName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tBox_vName.Location = new System.Drawing.Point(89, 74);
             this.tBox_vName.Name = "tBox_vName";
-            this.tBox_vName.Size = new System.Drawing.Size(336, 21);
+            this.tBox_vName.Size = new System.Drawing.Size(475, 21);
             this.tBox_vName.TabIndex = 11;
             this.tBox_vName.Text = "V_SafeOperationLicenseRecord";
             // 
@@ -158,7 +160,7 @@
             this.tBox_desc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tBox_desc.Location = new System.Drawing.Point(89, 104);
             this.tBox_desc.Name = "tBox_desc";
-            this.tBox_desc.Size = new System.Drawing.Size(336, 21);
+            this.tBox_desc.Size = new System.Drawing.Size(475, 21);
             this.tBox_desc.TabIndex = 13;
             this.tBox_desc.Text = "CreatTime: 2022/6/20  CreatBy：yhJin";
             // 
@@ -174,17 +176,37 @@
             // tBox_tbName
             // 
             this.tBox_tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tBox_tbName.Location = new System.Drawing.Point(89, 45);
+            this.tBox_tbName.Location = new System.Drawing.Point(86, 45);
             this.tBox_tbName.Name = "tBox_tbName";
-            this.tBox_tbName.Size = new System.Drawing.Size(336, 21);
+            this.tBox_tbName.Size = new System.Drawing.Size(478, 21);
             this.tBox_tbName.TabIndex = 15;
             this.tBox_tbName.Text = "SafeOperationLicenseRecord";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.richTextBox4.Location = new System.Drawing.Point(288, 158);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(137, 499);
+            this.richTextBox4.TabIndex = 16;
+            this.richTextBox4.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(324, 143);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "是否必填";
             // 
             // FORM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 669);
+            this.ClientSize = new System.Drawing.Size(576, 669);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.tBox_tbName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tBox_desc);
@@ -225,6 +247,8 @@
         private System.Windows.Forms.TextBox tBox_desc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tBox_tbName;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Label label7;
     }
 }
 
