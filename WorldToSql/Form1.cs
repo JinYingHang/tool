@@ -23,21 +23,19 @@ namespace WorldToSql
             try
             {
                 var a = richTextBox1.Lines;
-                var b = richTextBox2.Lines;
-                var d = richTextBox4.Lines;
-                if (a.Count() == 0 || b.Count() == 0)
+               
+                if (a.Count() == 0)
                     return;
 
                 var a1 = a.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
                 string[] c = new string[a1.Count()];
                 for (int i = 0; i < a1.Count(); i++)
                 {
-                    c[i] = $"///<summary>\r\n///{b[i]}--{d[i]}\r\n/// </summary>\r\n public string {a1[i]} "+"{get; set; }";
+                    c[i] = a[i] + ":{" + a[i] + "}";
                 }
-                richTextBox3.Lines=c;
+                richTextBox3.Text = string.Join("\\r\\n",c);
                 richTextBox1.Lines = null;
                 richTextBox2.Lines = null;
-               
             }
             catch (Exception ex)
             {
